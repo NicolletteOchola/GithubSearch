@@ -25,7 +25,7 @@ export class CalcDatePipe implements PipeTransform {
         counter = Math.floor(seconds / time[i]);
         if (counter > 0)
           if (counter === 1) {
-            return counter + '' + ' ago'; //For one day
+            return counter + '' + ' ago';
           }
           else {
             return counter + '' + 's ago';
