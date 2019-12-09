@@ -1,36 +1,28 @@
 <div>
   <!-- <app-navbar></app-navbar> -->
   <div class="container">
-    <div class="container search">
-      <div class="card">
-        <div class="card-body">
+        <div class="form-group">
           <!-- <app-form-search></app-form-search> -->
-          <form class="md-form mr-auto mb-8">
-
-            <input class="form-control mr-sm-2" type="text" placeholder="Enter user name" aria-label="Search"
+          <form>
+            <input class="form-control" type="text" placeholder="Enter user name" aria-label="Search"
               [(ngModel)]='userName' name='userName' #username='ngModel' (keyup)='findUser()'>
-            <div class="btn-search">
-              <button class="btn aqua-gradient btn-rounded btn-lg my-0 center" type="submit">Search</button>
+            <div>
+              <button class="btn btn-primary mb-2" type="submit">Search</button>
 
             </div>
 
           </form>
 
         </div>
-
-      </div>
-
     </div>
     <!-- End of search section -->
 
     <div class="prof-img">
-      <div class="coontainer">
+      <div class="container">
         <div class="mb-3 text-center">
-          <img src="{{profile.avatar_url}}" class="img-fluid z-depth-1 rounded-circle hoverable" alt="Responsive image">
           <h2>{{profile.name}}</h2>
-
           <div class="container">
-            <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal"
+            <button type="button" class="btn btn-primary" data-toggle="modal"
               data-target="#centralModalFluid">MORE</button>
             <!-- Central Modal Fluid -->
             <div class="modal fade" id="centralModalFluid" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
