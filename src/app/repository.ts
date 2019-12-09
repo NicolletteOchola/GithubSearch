@@ -6,5 +6,5 @@ export class Repository {
     public html_url: string,
     public created_at : Date
 
-  )
+  ) {}
 }
