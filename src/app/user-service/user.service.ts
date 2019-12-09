@@ -23,11 +23,11 @@ export class UserService {
   }
 
   getUsers() {
-    return this.http.get("http://api.github.com/users/" + this.userName + "?clientId=" + environment.clientId + "&clientSecret=" + environment.clientSecret);
+    return this.http.get("http://api.github.com/users/" + this.userName);
   }
 
   getRepos() {
-    return this.http.get("https://api.github.com/users/" + this.userName + "/repos?clientId" + environment.clientId + "&clientSecret=" + environment.clientSecret);
+    return this.http.get("https://api.github.com/users/" + this.userName + "/repos");
   }
 
   getUserInfo() {
