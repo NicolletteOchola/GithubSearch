@@ -6,9 +6,10 @@
           <!-- <app-form-search></app-form-search> -->
           <form class="container">
             <input class="form-control" type="text" placeholder="Enter Username" aria-label="Search"
-              [(ngModel)]='userName' name='userName' #username='ngModel' (keyup)='findUser()'>
+              [(ngModel)]='userName' name='userName' name="userName1" #username='ngModel' (keyup)='findUser()'>
             <div>
-              <button class="btn btn-outline-dark primary button" type="submit">Search</button>
+              <!-- <button class="btn btn-outline-dark primary button" type="submit">Search</button> -->
+              <p>Click enter to search!</p>
 
             </div>
 
