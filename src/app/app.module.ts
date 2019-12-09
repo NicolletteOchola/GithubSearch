@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +10,10 @@ import { RepositoryComponent } from './repository/repository.component';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LandingComponent } from './landing/landing.component';
+import { HttpClient } from 'selenium-webdriver';
+import { UserService } from './user-service/user.service';
+import { RepositoryService } from './repository-service/repository.service';
+
 
 @NgModule({
   declarations: [
@@ -16,13 +22,16 @@ import { LandingComponent } from './landing/landing.component';
     RepositoryComponent,
     SearchFormComponent,
     NavbarComponent,
-    LandingComponent
+    LandingComponent,
+    CalcDatePipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [UserService,RepositoryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
