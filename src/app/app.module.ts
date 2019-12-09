@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { CalcDatePipe } from './calc-date.pipe';
 import { RepositoryComponent } from './repository/repository.component';
 import { SearchFormComponent } from './search-form/search-form.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CalcDatePipe,
     RepositoryComponent,
-    SearchFormComponent
+    SearchFormComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
