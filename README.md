@@ -1,5 +1,12 @@
 # GitSearch
+This is a web application that allows a user to search for both github users and repositories. They are also able to view the user profiles and the details that are on their git hub accounts.
 
+## Author
+Nicollette Ochola
+
+## Technologies Used
+- Angular CLI version 8.3.19.
+- 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
 
 ## Development server

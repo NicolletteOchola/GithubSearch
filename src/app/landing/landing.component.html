@@ -1,13 +1,18 @@
 <div>
   <!-- <app-navbar></app-navbar> -->
   <div class="container">
+
+    <div class=" container heading">
+      <h5>Github Search</h5>
+      <img src="https://bit.ly/2qyXYy9" class="img-fluid" alt="githubicon" height="200" width="200">
+    </div>
         <div class="form-group">
           <!-- <app-form-search></app-form-search> -->
-          <form>
-            <input class="form-control" type="text" placeholder="Enter user name" aria-label="Search"
+          <form class="container">
+            <input class="form-control" type="text" placeholder="Enter Username" aria-label="Search"
               [(ngModel)]='userName' name='userName' #username='ngModel' (keyup)='findUser()'>
             <div>
-              <button class="btn btn-primary mb-2" type="submit">Search</button>
+              <button class="btn btn-outline-dark primary button" type="submit">Search</button>
 
             </div>
 
@@ -19,11 +24,18 @@
 
     <div class="prof-img">
       <div class="container">
+          <div class="card-body">
+              <!-- <div class="row">
+                <div class="col-sm-3">
+                  <img src="{{profile.avatar_url}}" class="rounded-circle">
+                </div> -->
+
         <div class="mb-3 text-center">
+           
           <h2>{{profile.name}}</h2>
           <div class="container">
-            <button type="button" class="btn btn-primary" data-toggle="modal"
-              data-target="#centralModalFluid">MORE</button>
+            <!-- <button type="button" class="btn btn-primary" data-toggle="modal"
+              data-target="#centralModalFluid">MORE</button> -->
             <!-- Central Modal Fluid -->
             <div class="modal fade" id="centralModalFluid" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
               aria-hidden="true">
@@ -66,11 +78,11 @@
 
                     </div>
                     <!--Footer-->
-                    <div class="modal-footer">
+                    <!-- <div>
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                       <button type="button" class="btn btn-primary">Save changes</button>
                     </div>
-                  </div>
+                  </div> -->
                   <!--/.Content-->
                 </div>
               </div>

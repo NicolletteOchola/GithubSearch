@@ -1,6 +1,6 @@
 export const environment = {
   production: false,
-  apiUrl: "https://api.github.com/repos/user/repo/issues?state=closed&access_token= ac9dacf6e17095277dddd2af186d5e8f639e09b4",
+  apiUrl: "https://api.github.com/users",
   clientId:"ecc76437a18ce80a5036",
   clientSecret: "2093ccd3d721443f40e26f584342291b3ea1ea58"
 };

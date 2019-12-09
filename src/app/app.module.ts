@@ -10,7 +10,7 @@ import { RepositoryComponent } from './repository/repository.component';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LandingComponent } from './landing/landing.component';
-import { HttpClient } from 'selenium-webdriver/http';
+import { HttpClient } from '@angular/common/http';
 import { UserService } from './user-service/user.service';
 import { RepositoryService } from './repository-service/repository.service';
 
