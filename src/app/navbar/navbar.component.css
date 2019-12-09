@@ -28,6 +28,9 @@
   margin-top: 64px;
 }
 
+.jumbotron {
+  text-align: center;
+}
 /* @media (max-width: 450px) {
   .card-intro {
     margin-top: 56px;

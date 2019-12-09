@@ -30,6 +30,7 @@ Lets collaborate. If you notice any bug or want to develop this web app further;
 5. Create a pull request
 
 ## Live link
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.

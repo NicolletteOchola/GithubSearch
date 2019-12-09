@@ -9,8 +9,10 @@ import { UserService } from '../user-service/user.service';
 export class SearchFormComponent implements OnInit {
 
   username:string;
+  
 
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService) { 
+  }
   
   findUser () {
     this.userService.updateUser(this.username);
