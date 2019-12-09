@@ -1,7 +1,7 @@
 export class User {
   constructor (
     public name: string,
-    public public_repository: number, 
+    public public_repo: number, 
     public avatar_url: string, 
     public login: string, 
     public company: string, 
@@ -10,4 +10,5 @@ export class User {
     public followers: number,
     public html_url:string
     )
+    {}
 }
